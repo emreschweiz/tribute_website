@@ -4,19 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samuel Beckett Tribute Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 </head>
 
 <style>
-body {
+html, body {
+    height: 100%;
+    width: 100%;
     padding: 0px;
     margin: 0px;
+    font-family: "Vend Sans", sans-serif;
 }
 
 .menu a {
-    font-size: 28px;
+    font-size: 24px;
     text-decoration: none;
     color: rgb(167, 145, 129);
     padding: 14px;
+}
+
+.menu a:hover {
+    background-color: #47423d;
+    color: #fff;
 }
 
 .menu {
@@ -24,9 +35,93 @@ body {
     width: 100%;
     background: rgb(85, 85, 85);
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
     align-items: center;
+    gap: 24px;
+}
+
+.baslangic {
+    border-bottom-style: solid;
+    width: 100%;
+    min-height: 70vh;
+    background: linear-gradient(to bottom, #e6e6e6, #b8b8b8);
+}
+
+.biyografi {
+    width: 100%;
+    min-height: 70vh;
+    background: linear-gradient(to bottom, #dcd6cf, #b8b8b8);
+    border-bottom-style: solid;
+}
+
+.resim1 {
+    position: absolute;
+    top: 200px;
+    left: 150px;
     border-radius: 10px;
+    box-shadow: 4px 6px 20px #47423d;
+}
+
+.text1 {
+    font-style: italic;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    font-size: 36px;
+    text-align: right;
+    text-shadow: 0px 10px 24px rgb(0, 0, 0);
+    color: rgb(85, 85, 85);
+}
+
+.sb {
+    position: absolute;
+    top: 150%;
+    right: 0%;
+    font-size: 18px;
+    text-align: right;
+}
+
+main {
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: 40px;
+    padding: 20px 0;
+    text-align: left;
+    color: #424242;
+}
+
+.resim2 {
+    position: absolute;
+    top: 90%;
+    right: 10%;
+    border-radius: 10px;
+    box-shadow: 4px 6px 20px #47423d;
+}
+
+.eserleri {
+    color: #424242;
+    font-size: 24px;
+    text-align: center;
+    border-bottom-style: solid;
+    width: 100%;
+    min-height: 70vh;
+    background: linear-gradient(to bottom, #e6e6e6, #b8b8b8);
+    position: relative;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+.footer {
+    width: 100%;
+    background: rgb(85, 85, 85);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #b8b8b8;
 }
 
 </style>
@@ -34,10 +129,85 @@ body {
 <body>
     <nav>
         <div class="menu">
-            <a href="#">Başlangıç</a></li>
-            <a href="#">Biyografi</a></li>
-            <a href="#">Eserleri</a></li>
+            <a href="#baslangic">Başlangıç</a></li>
+            <a href="#biyografi">Biyografi</a></li>
+            <a href="#eserleri">Eserleri</a></li>
         </div>
     </nav>
+    <div class="baslangic" id="baslangic">
+        <img src="https://i.hizliresim.com/5k70lop.jpg" class="resim1" alt="Başlangıç Fotoğrafı">
+        <p class="text1">"Hep denedin, hep yenildin.<br>Olsun. Gene dene, gene yenil. Daha iyi yenil."<span class="sb"> Samuel Beckett</span></p>
+    </div>
+    </nav>
+    <div class="biyografi" id="biyografi">
+    <main>
+        <h1>Samuel Beckett</h1>
+
+        <p>
+            Samuel Beckett, 13 Nisan 1906’da Dublin yakınlarında doğmuş İrlandalı bir yazar,
+            oyun yazarı ve şairdir. Hem İngilizce hem de Fransızca yazmasıyla tanınır ve
+            20. yüzyıl edebiyatının en özgün, en yenilikçi isimlerinden biri kabul edilir.
+            Öğrenimini Dublin’deki Trinity College’da tamamladı; burada modern diller okudu
+            ve mezun olduktan sonra kısa bir süre Paris’te İngilizce okutmanı olarak çalıştı.
+            Bu dönemde James Joyce ile tanışması, onun edebi dünyasını derinden etkiledi.
+        </p>
+
+        <p>
+            Beckett’in yaşamı boyunca taşıdığı temel duygulardan biri, insan varoluşuna karşı
+            duyduğu sorgulayıcı ve eleştirel bakıştı. Yazınında sıkça yalnızlık, bekleyiş,
+            iletişimsizlik, zamanın akışı ve insanın anlamsızlıkla mücadelesi gibi temaları
+            işledi. 1930’lu yıllarda hem şiir hem düzyazı türünde eserler vermeye başladı;
+            fakat geniş kitleler tarafından asıl tanınması 1953’te Paris’te sahnelenen
+            <em>Godot’yu Beklerken</em> adlı oyununun yarattığı büyük etkiyle oldu. Bu oyun,
+            “absürd tiyatro” akımının en önemli örneklerinden biri hâline geldi ve dünya
+            çapında Beckett’in adını duyurdu.
+        </p>
+
+        <p>
+            İkinci Dünya Savaşı sırasında Fransa’da yaşayan Beckett, Nazi işgaline karşı
+            Direniş hareketine katıldı; gizli görevlerde bulundu ve savaş boyunca büyük
+            riskler aldı. Savaştan sonra Fransa’da yaşamaya devam ederek hem oyunlarını
+            hem romanlarını hem de kısa metinlerini üretmeyi sürdürdü. Zamanla dilini
+            sadeleştirdi, gereksiz gördüğü her şeyi metinlerinden ayıkladı ve minimalizme
+            yaklaşan, oldukça özgün bir edebi üslup geliştirdi.
+        </p>
+
+        <p>
+            1969 yılında edebiyata yaptığı katkılardan dolayı Nobel Edebiyat Ödülü’ne
+            layık görüldü. <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Nobel_prize_medal.svg/20px-Nobel_prize_medal.svg.png" alt="nobel"> Ancak Beckett mütevazı kişiliğiyle ödülü büyük bir tantanayla
+            karşılamaktan kaçındı; sade ve gösterişsiz yaşamını sürdürmeyi tercih etti.
+        </p>
+
+        <p>
+            Hayatının büyük kısmını Paris’te geçiren Samuel Beckett, 22 Aralık 1989’da
+            burada hayatını kaybetti. Bugün modern edebiyatın ve tiyatronun en etkili
+            isimlerinden biri olarak anılır; eserleri hâlâ dünya sahnelerinde oynanmaya,
+            üniversitelerde incelenmeye ve yeni kuşaklara ilham vermeye devam eder.
+        </p>
+        <img src="https://i.hizliresim.com/7q8tijo.jpg" class="resim2" alt="Biyografi Fotoğrafı">
+    </main>
+    </div>
+
+    <div class="eserleri" id="eserleri">
+        <h2>Eserleri</h2>
+        <ul>
+            <li>Murphy (1938)</li>
+            <li>Molloy (1951)</li>
+            <li>Malone Dies (1951)</li>
+            <li>Godot’yu Beklerken (1953)</li>
+            <li>The Unnamable (1953)</li>
+            <li>Watt (1953)</li>
+            <li>Oyun Sonu (1957)</li>
+            <li>Krapp’ın Son Bandı (1958)</li>
+            <li>Mutlu Günler (1961)</li>
+            <li>Play (1963)</li>
+        </ul>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Samuel_Beckett_signature.svg" class="imza" alt="Samuel Beckett İmza">
+    </div>
+
+<footer class="footer">
+    <p>Page Made For Patika.Dev</p>
+</footer>
+
 </body>
 </html>
